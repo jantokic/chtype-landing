@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DemoWindow from "./DemoWindow";
 import LiquidGlass from "./LiquidGlass";
 
 const NPM_URL = "https://www.npmjs.com/package/@jantokic/chtype";
@@ -55,6 +56,10 @@ export default function Hero() {
       </div>
 
       <LiquidGlass />
+
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 -mt-20 pb-8">
+        <DemoWindow />
+      </div>
     </section>
   );
 }
