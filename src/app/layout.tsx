@@ -24,7 +24,15 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Cloudflare Web Analytics: cookieless, no consent banner needed */}
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "ae8c226a73584d24aa16be8cf0fe47d8"}'
+        />
+      </body>
     </html>
   );
 }
